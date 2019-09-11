@@ -5,6 +5,7 @@ import Router from 'next/router'
 import Drawer from "../components/drawer";
 import Dialog from "../components/dialog";
 import Header from "../components/header";
+import authKey from "../constants/authKey";
 
 class BsApp extends App {
   // Only uncomment this method if you have blocking data requirements for
@@ -53,7 +54,7 @@ class BsApp extends App {
       forwardTo
     } = this.state;
 
-    if (value !== 'test1234') {
+    if (value !== authKey) {
       returnValue.hasError = true;
     } else {
       returnValue.hasError = false;
