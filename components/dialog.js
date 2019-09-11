@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import ReactSVG from "react-svg";
+import React, { useState } from 'react';
+import ReactSVG from 'react-svg';
 
-import language from "../constants/language"
-import {lang} from "moment";
+import language from '../constants/language';
+import { lang } from 'moment';
 
 const Dialog = ({ showDialog, onSubmit }) => {
   const [error, setError] = useState('');
@@ -17,44 +17,53 @@ const Dialog = ({ showDialog, onSubmit }) => {
       setError(language.authErrorMessage());
       setTimeout(() => {
         setError('');
-      }, 2000)
+      }, 2000);
     } else {
       onClose();
       successCallback();
     }
-  }
+  };
 
   const onClose = () => {
     const body = document.querySelector('body');
     const html = document.querySelector('html');
-    body.style.overflow = "auto";
-    html.style.overflow = "auto";
+    body.style.overflow = 'auto';
+    html.style.overflow = 'auto';
     showDialog({ showDialog: false });
   };
 
   return (
-      <section>
-        <div className='dialog'>
-          {error && <p className='error'>{error}</p>}
+    <section>
+      <div className="dialog">
+        {error && <p className="error">{error}</p>}
 
-          <div className='container'>
-            <ReactSVG
-                src={`/static/close.svg`}
-                beforeInjection={svg => {
-                  svg.setAttribute('style', 'width: 24px; height: auto; cursor: pointer');
-                }}
-                onClick={onClose}
+        <div className="container">
+          <ReactSVG
+            src={`/static/close.svg`}
+            beforeInjection={svg => {
+              svg.setAttribute(
+                'style',
+                'width: 24px; height: auto; cursor: pointer'
+              );
+            }}
+            onClick={onClose}
+          />
+          <p>{language.authPrompt()}</p>
+          <form onSubmit={onFormSubmit} className="content">
+            <input
+              className="input"
+              type="password"
+              placeholder="password"
+              value={password}
+              onChange={onInputChange}
             />
-            <p>{language.authPrompt()}</p>
-            <form onSubmit={onFormSubmit} className='content'>
-              <input className='input' type='password' placeholder='password' value={password} onChange={onInputChange} />
-              <input className='input input-button' type='submit' value='Enter' />
-            </form>
-          </div>
+            <input className="input input-button" type="submit" value="Enter" />
+          </form>
         </div>
-        <div className='overlay' onClick={onClose}/>
+      </div>
+      <div className="overlay" onClick={onClose} />
 
-        <style jsx>{`
+      <style jsx>{`
           section {
             position: fixed;
             top: 0;
@@ -155,8 +164,8 @@ const Dialog = ({ showDialog, onSubmit }) => {
             height 100%;
           }
         `}</style>
-      </section>
+    </section>
   );
-}
+};
 
 export default Dialog;

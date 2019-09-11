@@ -1,17 +1,21 @@
-import React from 'react'
+import React from 'react';
 
-import PhotoBlock from "../components/photoBlock";
-import ComingSoon from "../components/comingSoon";
-import ProtectedPage from "../components/protectedPage";
+import PhotoBlock from '../components/photoBlock';
+import ComingSoon from '../components/comingSoon';
+import ProtectedPage from '../components/protectedPage';
 
-const Schedule = ({isLoggedIn}) => {
+const Schedule = ({ isLoggedIn }) => {
   return (
-      <ProtectedPage isLoggedIn={isLoggedIn}>
-        <PhotoBlock backgroundImage='/static/bs_hero2.png' height='500px' textColor='#000000'>
-          <h3>Schedule</h3>
-        </PhotoBlock>
-        <ComingSoon />
-        <style jsx>{`
+    <ProtectedPage isLoggedIn={isLoggedIn}>
+      <PhotoBlock
+        backgroundImage="/static/bs_hero2.png"
+        height="500px"
+        textColor="#000000"
+      >
+        <h3>Schedule</h3>
+      </PhotoBlock>
+      <ComingSoon />
+      <style jsx>{`
         h3 {
           text-align: left;
           font-family: bodoni-urw, serif;
@@ -24,8 +28,8 @@ const Schedule = ({isLoggedIn}) => {
           text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
         }
       `}</style>
-      </ProtectedPage>
+    </ProtectedPage>
   );
 };
 
-export default Schedule
+export default Schedule;

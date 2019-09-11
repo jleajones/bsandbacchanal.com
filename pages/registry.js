@@ -1,14 +1,22 @@
-import React from 'react'
+import React from 'react';
 
-import PhotoBlock from "../components/photoBlock";
-import ComingSoon from "../components/comingSoon";
-import ProtectedPage from "../components/protectedPage";
+import PhotoBlock from '../components/photoBlock';
+import ComingSoon from '../components/comingSoon';
+import ProtectedPage from '../components/protectedPage';
 
-const Registry = ({isLoggedIn}) => {
+const Registry = ({ isLoggedIn }) => {
   return (
     <ProtectedPage isLoggedIn={isLoggedIn}>
-      <PhotoBlock backgroundImage='/static/bs_hero2.png' height='500px' textColor='#000000'>
-        <h3>Wedding<br/>Registry</h3>
+      <PhotoBlock
+        backgroundImage="/static/bs_hero2.png"
+        height="500px"
+        textColor="#000000"
+      >
+        <h3>
+          Wedding
+          <br />
+          Registry
+        </h3>
       </PhotoBlock>
       <ComingSoon />
       <style jsx>{`
@@ -28,4 +36,4 @@ const Registry = ({isLoggedIn}) => {
   );
 };
 
-export default Registry
+export default Registry;

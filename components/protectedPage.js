@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import Router from 'next/router'
+import Router from 'next/router';
 
 class ProtectedPage extends React.Component {
   componentDidMount() {
@@ -10,12 +10,8 @@ class ProtectedPage extends React.Component {
     }
   }
 
-  render () {
-    return (
-        <>
-          { this.props.children }
-        </>
-    );
+  render() {
+    return <>{this.props.children}</>;
   }
 }
 

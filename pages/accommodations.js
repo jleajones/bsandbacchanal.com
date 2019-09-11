@@ -1,13 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-import PhotoBlock from "../components/photoBlock";
-import ComingSoon from "../components/comingSoon";
-import ProtectedPage from "../components/protectedPage";
+import PhotoBlock from '../components/photoBlock';
+import ComingSoon from '../components/comingSoon';
+import ProtectedPage from '../components/protectedPage';
 
 const Accommodations = ({ isLoggedIn }) => {
   return (
     <ProtectedPage isLoggedIn={isLoggedIn}>
-      <PhotoBlock backgroundImage='/static/bs_hero2.png' height='500px' textColor='#000000'>
+      <PhotoBlock
+        backgroundImage="/static/bs_hero2.png"
+        height="500px"
+        textColor="#000000"
+      >
         <h3>Accommodations</h3>
       </PhotoBlock>
       <ComingSoon />
@@ -28,4 +32,4 @@ const Accommodations = ({ isLoggedIn }) => {
   );
 };
 
-export default Accommodations
+export default Accommodations;
