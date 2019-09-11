@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
 import Link from "next/link";
+
+import language from "../constants/language"
 import Nav from "./nav";
 import Logo from "./logo";
+import {lang} from "moment";
 
 const Header = ({ onMenuClick, showDialog, isLoggedIn }) => {
   const [headerClassname, setHeaderClassName] = useState('');
@@ -20,8 +23,8 @@ const Header = ({ onMenuClick, showDialog, isLoggedIn }) => {
       <header className={headerClassname}>
         <div className='accentBar'>
           <div className='container'>
-            <span>06.06.20 <strong>Trinidad and Tobago</strong>, West Indies</span>
-            <span><Link href="#"><a>#bsandbacchanal</a></Link></span>
+            <span>{language.dateDate()} <strong>{language.destinationDetail()}</strong>, {language.destinationGeneral()}</span>
+            <span><Link href="#"><a>{language.hashtag()}</a></Link></span>
           </div>
         </div>
         <Logo fixed={headerClassname === 'fixed'} onMenuClick={onMenuClick}/>

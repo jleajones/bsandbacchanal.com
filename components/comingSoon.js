@@ -1,13 +1,13 @@
 import React from 'react'
+import language from "../constants/language";
 import Link from "next/link";
 
 const ComingSoon = () => (
     <section className='welcome'>
       <div className='container'>
         <div className='item'>
-          <h2>Coming Soon...</h2>
-          <p>We are working to provide you with the best experience possible!  Please check back in the upcoming weeks
-            for more details.</p>
+          <h2>{language.comingSoonHeading()}</h2>
+          <p>{language.comingSoonText()}</p>
         </div>
       </div>
 

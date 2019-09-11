@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import ReactSVG from "react-svg";
+import language from "../constants/language"
 
 const Dialog = ({ showDialog, onSubmit }) => {
   const [error, setError] = useState('');
@@ -27,23 +28,24 @@ const Dialog = ({ showDialog, onSubmit }) => {
                 onClick={onClose}
             />
             <p>Please enter the password to proceed.</p>
-            <div className='content'>
+            <form onSubmit={e => {
+              e.preventDefault();
+              const { hasError, successCallback } = onSubmit(password);
+              if (hasError) {
+                setError(language.authErrorMessage());
+                setTimeout(() => {
+                  setError('');
+                }, 2000)
+              } else {
+                onClose();
+                successCallback();
+              }
+            }} className='content'>
               <input className='input' type='password' placeholder='password' value={password} onChange={(e) => {
                 setPassword(e.target.value);
-              }}/>
-              <input className='input input-button' type='submit' value='Enter' onClick={() => {
-                const { hasError, successCallback } = onSubmit(password);
-                if (hasError) {
-                  setError('Sorry, the password you entered is incorrect.  Please try again.');
-                  setTimeout(() => {
-                    setError('');
-                  }, 2000)
-                } else {
-                  onClose();
-                  successCallback();
-                }
-              }}/>
-            </div>
+              }} onKeyPress={(e) => console.log(e)}/>
+              <input className='input input-button' type='submit' value='Enter' />
+            </form>
           </div>
         </div>
         <div className='overlay' onClick={onClose}/>

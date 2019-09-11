@@ -1,13 +1,14 @@
 import React from 'react'
+import language from "../constants/language";
 
 const Hero = () => (
     <section>
       <div className='container'>
         <div>
           <div className='date'>
-            <span>06</span>
-            <span className='accent'>06</span>
-            <span>20</span>
+            <span>{language.dateMonth()}</span>
+            <span className='accent'>{language.dateDate()}</span>
+            <span>{language.dateYear()}</span>
           </div>
         </div>
       </div>

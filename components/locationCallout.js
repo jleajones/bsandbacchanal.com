@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactSVG from 'react-svg'
 
+import language from "../constants/language";
+
 const LocationCallout = () => (
     <div>
       <ReactSVG
@@ -9,7 +11,7 @@ const LocationCallout = () => (
             svg.setAttribute('style', 'width: 150px; height: auto; fill: #fff;');
           }}
       />
-      <h2>Trinidad and Tobago <span>West Indies</span></h2>
+      <h2>{language.destinationDetail()} <span>{language.destinationGeneral()}</span></h2>
       <style jsx>{`
         div {
           display: flex;

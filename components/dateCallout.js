@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactSVG from 'react-svg'
 import moment from 'moment';
-
+import language from "../constants/language"
 
 const DateCallout = () => {
   const weddingDay = moment([2020, 6, 6]);
@@ -16,7 +16,7 @@ const DateCallout = () => {
             }}
         />
         { /*<span className='days-left'>{daysLeft}</span>*/ }
-        <h2><span>Saturday</span>06.06.20</h2>
+        <h2><span>{language.dateDay()}</span>{language.dateFullDate()}</h2>
 
         <style jsx>{`
         div {
