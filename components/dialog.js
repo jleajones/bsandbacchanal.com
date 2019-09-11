@@ -4,6 +4,7 @@ import ReactSVG from "react-svg";
 const Dialog = ({ showDialog, onSubmit }) => {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
+
   const onClose = () => {
     const body = document.querySelector('body');
     const html = document.querySelector('html');
