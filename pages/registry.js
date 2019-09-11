@@ -1,8 +1,8 @@
 import React from 'react';
 
 import PhotoBlock from '../components/photoBlock';
-import ComingSoon from '../components/comingSoon';
 import ProtectedPage from '../components/protectedPage';
+import RegistryContent from '../components/registryContent';
 
 const Registry = ({ isLoggedIn }) => {
   return (
@@ -18,7 +18,7 @@ const Registry = ({ isLoggedIn }) => {
           Registry
         </h3>
       </PhotoBlock>
-      <ComingSoon />
+      <RegistryContent />
       <style jsx>{`
         h3 {
           text-align: left;

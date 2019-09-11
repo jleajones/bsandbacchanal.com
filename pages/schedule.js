@@ -3,6 +3,7 @@ import React from 'react';
 import PhotoBlock from '../components/photoBlock';
 import ComingSoon from '../components/comingSoon';
 import ProtectedPage from '../components/protectedPage';
+import language from '../constants/language';
 
 const Schedule = ({ isLoggedIn }) => {
   return (
@@ -14,7 +15,7 @@ const Schedule = ({ isLoggedIn }) => {
       >
         <h3>Schedule</h3>
       </PhotoBlock>
-      <ComingSoon />
+      <ComingSoon message={language.comingSoonSchedule()} />
       <style jsx>{`
         h3 {
           text-align: left;

@@ -3,6 +3,7 @@ import React from 'react';
 import PhotoBlock from '../components/photoBlock';
 import ComingSoon from '../components/comingSoon';
 import ProtectedPage from '../components/protectedPage';
+import language from '../constants/language';
 
 const ThingToDo = ({ isLoggedIn }) => {
   return (
@@ -18,7 +19,7 @@ const ThingToDo = ({ isLoggedIn }) => {
           To Do
         </h3>
       </PhotoBlock>
-      <ComingSoon />
+      <ComingSoon message={language.comingSoonThingsToDo()} />
       <style jsx>{`
         h3 {
           text-align: left;

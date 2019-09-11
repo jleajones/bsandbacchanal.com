@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import ReactSVG from 'react-svg';
 
 import language from '../constants/language';
-import { lang } from 'moment';
 
 const Dialog = ({ showDialog, onSubmit }) => {
   const [error, setError] = useState('');

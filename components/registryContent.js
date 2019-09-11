@@ -2,12 +2,12 @@ import React from 'react';
 
 import language from '../constants/language';
 
-const ComingSoon = ({ message }) => (
+const RegistryContent = () => (
   <section className="welcome">
     <div className="container">
       <div className="item">
-        <h2>{language.comingSoonHeading()}</h2>
-        <p>{message || language.comingSoonDefaultText()}</p>
+        <h2>{language.registryHeading()}</h2>
+        <p>{language.registryText()}</p>
       </div>
     </div>
 
@@ -71,4 +71,4 @@ const ComingSoon = ({ message }) => (
   </section>
 );
 
-export default ComingSoon;
+export default RegistryContent;
