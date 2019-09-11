@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+
 import linkItems from '../constants/links'
 
 const links = linkItems.map(link => {

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import language from "../constants/language";
 
 const Hero = () => (

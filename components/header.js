@@ -5,7 +5,6 @@ import Link from "next/link";
 import language from "../constants/language"
 import Nav from "./nav";
 import Logo from "./logo";
-import {lang} from "moment";
 
 const Header = ({ onMenuClick, showDialog, isLoggedIn }) => {
   const [headerClassname, setHeaderClassName] = useState('');

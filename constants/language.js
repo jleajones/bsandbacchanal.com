@@ -1,4 +1,5 @@
 export default {
+  authPrompt: () => 'Please enter the password to proceed.',
   authErrorMessage: () => 'Sorry, the password you entered is incorrect.  Please try again.',
   dateDay: () => 'Saturday',
   dateFullDate: () => '06.06.20',

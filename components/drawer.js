@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactSVG from "react-svg";
 import Link from "next/link";
+
 import linkItems from '../constants/links'
 
 const links = linkItems.map(link => {

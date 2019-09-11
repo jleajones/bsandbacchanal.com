@@ -1,10 +1,28 @@
 import React, { useState } from 'react'
 import ReactSVG from "react-svg";
+
 import language from "../constants/language"
+import {lang} from "moment";
 
 const Dialog = ({ showDialog, onSubmit }) => {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
+
+  const onInputChange = e => setPassword(e.target.value);
+
+  const onFormSubmit = e => {
+    e.preventDefault();
+    const { hasError, successCallback } = onSubmit(password);
+    if (hasError) {
+      setError(language.authErrorMessage());
+      setTimeout(() => {
+        setError('');
+      }, 2000)
+    } else {
+      onClose();
+      successCallback();
+    }
+  }
 
   const onClose = () => {
     const body = document.querySelector('body');
@@ -27,23 +45,9 @@ const Dialog = ({ showDialog, onSubmit }) => {
                 }}
                 onClick={onClose}
             />
-            <p>Please enter the password to proceed.</p>
-            <form onSubmit={e => {
-              e.preventDefault();
-              const { hasError, successCallback } = onSubmit(password);
-              if (hasError) {
-                setError(language.authErrorMessage());
-                setTimeout(() => {
-                  setError('');
-                }, 2000)
-              } else {
-                onClose();
-                successCallback();
-              }
-            }} className='content'>
-              <input className='input' type='password' placeholder='password' value={password} onChange={(e) => {
-                setPassword(e.target.value);
-              }} onKeyPress={(e) => console.log(e)}/>
+            <p>{language.authPrompt()}</p>
+            <form onSubmit={onFormSubmit} className='content'>
+              <input className='input' type='password' placeholder='password' value={password} onChange={onInputChange} />
               <input className='input input-button' type='submit' value='Enter' />
             </form>
           </div>

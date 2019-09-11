@@ -1,6 +1,6 @@
 import React from 'react'
+
 import language from "../constants/language";
-import Link from "next/link";
 
 const ComingSoon = () => (
     <section className='welcome'>
