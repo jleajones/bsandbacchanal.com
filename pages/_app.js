@@ -78,10 +78,6 @@ class BsApp extends App {
       isLoggedIn
     } = this.state;
 
-    console.log(`isLoggedIn: ${isLoggedIn}`);
-
-    console.log('BsApp -> render');
-
     return (
         <>
           <Head>

@@ -32,7 +32,6 @@ const Dialog = ({ showDialog, onSubmit }) => {
               }}/>
               <input className='input input-button' type='submit' value='Enter' onClick={() => {
                 const { hasError, successCallback } = onSubmit(password);
-                console.log(hasError);
                 if (hasError) {
                   setError('Sorry, the password you entered is incorrect.  Please try again.');
                   setTimeout(() => {
