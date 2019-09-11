@@ -1,53 +1,68 @@
-import React, { useState } from 'react'
-import ReactSVG from "react-svg";
+import React, { useState } from 'react';
+import ReactSVG from 'react-svg';
+
+import language from '../constants/language';
 
 const Dialog = ({ showDialog, onSubmit }) => {
   const [error, setError] = useState('');
   const [password, setPassword] = useState('');
+
+  const onInputChange = e => setPassword(e.target.value);
+
+  const onFormSubmit = e => {
+    e.preventDefault();
+    const { hasError, successCallback } = onSubmit(password);
+    if (hasError) {
+      setError(language.authErrorMessage());
+      setTimeout(() => {
+        setError('');
+      }, 2000);
+    } else {
+      onClose();
+      successCallback();
+    }
+  };
+
   const onClose = () => {
     const body = document.querySelector('body');
     const html = document.querySelector('html');
-    body.style.overflow = "auto";
-    html.style.overflow = "auto";
+    body.style.overflow = 'auto';
+    html.style.overflow = 'auto';
     showDialog({ showDialog: false });
   };
 
   return (
-      <section>
-        <div className='dialog'>
-          {error && <p className='error'>{error}</p>}
+    <section>
+      <div className="dialog">
+        {error && <p className="error">{error}</p>}
 
-          <div className='container'>
-            <ReactSVG
-                src={`/static/close.svg`}
-                beforeInjection={svg => {
-                  svg.setAttribute('style', 'width: 24px; height: auto; cursor: pointer');
-                }}
-                onClick={onClose}
+        <div className="container">
+          <ReactSVG
+            src={`/static/close.svg`}
+            beforeInjection={svg => {
+              svg.setAttribute(
+                'style',
+                'width: 24px; height: auto; cursor: pointer'
+              );
+            }}
+            onClick={onClose}
+          />
+          <p>{language.authPrompt()}</p>
+          <form onSubmit={onFormSubmit} className="content">
+            <input
+              className="input"
+              type="password"
+              placeholder="password"
+              value={password}
+              onChange={onInputChange}
             />
-            <p>Please enter the password to proceed.</p>
-            <div className='content'>
-              <input className='input' type='password' placeholder='password' value={password} onChange={(e) => {
-                setPassword(e.target.value);
-              }}/>
-              <input className='input input-button' type='submit' value='Enter' onClick={() => {
-                const { hasError, successCallback } = onSubmit(password);
-                if (hasError) {
-                  setError('Sorry, the password you entered is incorrect.  Please try again.');
-                  setTimeout(() => {
-                    setError('');
-                  }, 2000)
-                } else {
-                  onClose();
-                  successCallback();
-                }
-              }}/>
-            </div>
-          </div>
+            <input className="input input-button" type="submit" value="Enter" />
+          </form>
         </div>
-        <div className='overlay' onClick={onClose}/>
+      </div>
+      <div className="overlay" onClick={onClose} />
 
-        <style jsx>{`
+      <style jsx>{`
           section {
             position: fixed;
             top: 0;
@@ -148,8 +163,8 @@ const Dialog = ({ showDialog, onSubmit }) => {
             height 100%;
           }
         `}</style>
-      </section>
+    </section>
   );
-}
+};
 
 export default Dialog;

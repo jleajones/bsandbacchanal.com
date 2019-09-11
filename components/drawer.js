@@ -1,11 +1,12 @@
-import React from 'react'
-import ReactSVG from "react-svg";
-import Link from "next/link";
-import linkItems from '../constants/links'
+import React from 'react';
+import ReactSVG from 'react-svg';
+import Link from 'next/link';
+
+import linkItems from '../constants/links';
 
 const links = linkItems.map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
-  return link
+  return link;
 });
 
 const Drawer = ({ onMenuClick, showDialog, isLoggedIn }) => {
@@ -15,14 +16,14 @@ const Drawer = ({ onMenuClick, showDialog, isLoggedIn }) => {
 
   const onClose = () => {
     root = document.getElementById('drawer-root');
-    body.style.overflow = "auto";
-    html.style.overflow = "auto";
+    body.style.overflow = 'auto';
+    html.style.overflow = 'auto';
 
     root.classList.remove('open');
     root.classList.add('close');
     setTimeout(() => {
       onMenuClick(false);
-    }, 150)
+    }, 150);
   };
 
   const onLinkClick = e => {
@@ -31,39 +32,41 @@ const Drawer = ({ onMenuClick, showDialog, isLoggedIn }) => {
       const forwardToUrl = e.target.href;
       e.stopPropagation();
       e.preventDefault();
-      body.style.overflow = "hidden";
-      html.style.overflow = "hidden";
+      body.style.overflow = 'hidden';
+      html.style.overflow = 'hidden';
       showDialog({ showDialog: true, forwardToUrl });
     }
   };
 
   return (
-      <section id='drawer-root' className='open'>
-        <div className='drawer'>
-          <div className='container'>
-            <ReactSVG
-                src='/static/menu-open.svg'
-                beforeInjection={svg => {
-                  svg.setAttribute('style', 'width: 24px; height: auto;');
-                }}
-                onClick={onClose}
-            />
-            <nav>
-              <ul>
-                {links.map(({ key, href, label }) => (
-                    <li key={key}>
-                      <Link href={href}>
-                        <a onClick={label === 'home' ? () => {} : onLinkClick}>{label}</a>
-                      </Link>
-                    </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
+    <section id="drawer-root" className="open">
+      <div className="drawer">
+        <div className="container">
+          <ReactSVG
+            src="/static/menu-open.svg"
+            beforeInjection={svg => {
+              svg.setAttribute('style', 'width: 24px; height: auto;');
+            }}
+            onClick={onClose}
+          />
+          <nav>
+            <ul>
+              {links.map(({ key, href, label }) => (
+                <li key={key}>
+                  <Link href={href}>
+                    <a onClick={label === 'home' ? () => {} : onLinkClick}>
+                      {label}
+                    </a>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
-        <div className='overlay' onClick={onClose}/>
+      </div>
+      <div className="overlay" onClick={onClose} />
 
-        <style jsx>{`
+      <style jsx>{`
           section {
             position: fixed;
             top: 0;
@@ -147,7 +150,7 @@ const Drawer = ({ onMenuClick, showDialog, isLoggedIn }) => {
             height 100%;
           }
         `}</style>
-      </section>
+    </section>
   );
 };
 

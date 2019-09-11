@@ -1,37 +1,37 @@
-import React from 'react'
-import ReactSVG from "react-svg";
+import React from 'react';
+import ReactSVG from 'react-svg';
 
 const Logo = ({ fixed, onMenuClick }) => {
   const onClick = () => {
     const body = document.querySelector('body');
     const html = document.querySelector('html');
-    body.style.overflow = "hidden";
-    html.style.overflow = "hidden";
+    body.style.overflow = 'hidden';
+    html.style.overflow = 'hidden';
     onMenuClick(true);
   };
 
   return (
-      <div className="root">
-        <h1 className='logo'>Britni &amp; Samuel</h1>
+    <div className="root">
+      <h1 className="logo">Britni &amp; Samuel</h1>
 
-        <span className="menu-icon">
+      <span className="menu-icon">
         <ReactSVG
-            src={`/static/menu.svg`}
-            beforeInjection={svg => {
-              svg.setAttribute('style', 'width: 24px; height: auto;');
-            }}
-            onClick={onClick}
+          src={`/static/menu.svg`}
+          beforeInjection={svg => {
+            svg.setAttribute('style', 'width: 24px; height: auto;');
+          }}
+          onClick={onClick}
         />
       </span>
-        <style jsx>{`
+      <style jsx>{`
         .root {
           position: relative;
         }
-        
+
         .menu-icon {
           display: none;
-         }
-        
+        }
+
         .logo {
           text-align: center;
           font-family: bickham-script-pro-3, serif;
@@ -41,8 +41,8 @@ const Logo = ({ fixed, onMenuClick }) => {
           line-height: ${fixed ? '40px' : '70px'};
           margin: ${fixed ? '20px 0 0' : '20px 0 0'};
           transition: all 0.5s ease;
-        } 
-        
+        }
+
         @media (max-width: 768px) {
           .logo {
             font-size: ${fixed ? '36px' : '55px'};
@@ -50,7 +50,7 @@ const Logo = ({ fixed, onMenuClick }) => {
             margin-bottom: ${fixed ? '8px' : '20px'};
             transition: all 0.5s ease;
           }
-          
+
           .menu-icon {
             display: block;
             margin-top: ${fixed ? '0' : '10px'};
@@ -61,7 +61,7 @@ const Logo = ({ fixed, onMenuClick }) => {
             transition: all 0.5s ease;
           }
         }
-        
+
         @media (max-width: 320px) {
           .logo {
             font-size: 40px;
@@ -69,15 +69,15 @@ const Logo = ({ fixed, onMenuClick }) => {
             margin-top: ${fixed ? '0' : '20px'};
             margin-bottom: ${fixed ? '0' : '20px'};
           }
-          
+
           .menu-icon {
             margin-top: 7px;
             transition: all 0.5s ease;
           }
         }
       `}</style>
-      </div>
+    </div>
   );
-}
+};
 
 export default Logo;
