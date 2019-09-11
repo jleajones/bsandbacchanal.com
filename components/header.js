@@ -4,7 +4,7 @@ import Link from "next/link";
 import Nav from "./nav";
 import Logo from "./logo";
 
-const Header = ({ onMenuClick, showDialog }) => {
+const Header = ({ onMenuClick, showDialog, isLoggedIn }) => {
   const [headerClassname, setHeaderClassName] = useState('');
   useEffect( () => {
     window.addEventListener('scroll', (e) => {
@@ -25,7 +25,7 @@ const Header = ({ onMenuClick, showDialog }) => {
           </div>
         </div>
         <Logo fixed={headerClassname === 'fixed'} onMenuClick={onMenuClick}/>
-        <Nav showDialog={showDialog} />
+        <Nav showDialog={showDialog} isLoggedIn={isLoggedIn}/>
 
         <style jsx>{`
           header {
@@ -47,7 +47,7 @@ const Header = ({ onMenuClick, showDialog }) => {
             font-family: skolar-sans-latin, sans-serif;
             font-weight: 100;
             font-style: normal;
-            padding: 8px 0;
+            padding: 8px;
             color: #666666;
             font-size: 12px;
             line-height: 12px;

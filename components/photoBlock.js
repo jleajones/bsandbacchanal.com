@@ -13,6 +13,7 @@ const PhotoBlock = ({ backgroundImage, height, children}) => (
         background-position: 50% 0;
         background-size: cover;
         height: ${height};
+        position: relative;
       }
       
       .container {

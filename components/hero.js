@@ -14,7 +14,6 @@ const Hero = () => (
 
       <style jsx>{`
         section {
-          margin-top: 160px;
           height: 700px;
           background-image: url(/static/bs_hero.png);
           background-repeat: no-repeat;

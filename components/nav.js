@@ -1,38 +1,33 @@
 import React from 'react'
 import Link from 'next/link'
+import linkItems from '../constants/links'
 
-const links = [
-  { href: '/', label: 'home' },
-  { href: '/schedule', label: 'schedule' },
-  { href: '/travel', label: 'travel' },
-  { href: '/registry', label: 'registry' },
-  { href: '/wedding-party', label: 'wedding party' },
-  { href: '/photos', label: 'photos' },
-  { href: '/things-to-do', label: 'things to do' },
-  { href: '/faqs', label: 'faqs' },
-].map(link => {
+const links = linkItems.map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link
 });
 
-const Nav = ({ showDialog }) => {
+const Nav = ({ showDialog, isLoggedIn }) => {
   const onClick = e => {
-    e.stopPropagation();
-    e.preventDefault();
-    const body = document.querySelector('body');
-    const html = document.querySelector('html');
-    body.style.overflow = "hidden";
-    html.style.overflow = "hidden";
-    showDialog(true);
+    if (!isLoggedIn) {
+      e.stopPropagation();
+      e.preventDefault();
+      const body = document.querySelector('body');
+      const html = document.querySelector('html');
+      const forwardToUrl = e.target.href;
+      body.style.overflow = "hidden";
+      html.style.overflow = "hidden";
+      showDialog({ showDialog: true, forwardToUrl });
+    }
   };
 
   return (
       <nav>
         <ul>
           {links.map(({ key, href, label }) => (
-              <li key={key} onClick={label === 'home' ? () => {} : onClick}>
-                <Link href='#'>
-                  <a>{label}</a>
+              <li key={key}>
+                <Link href={href}>
+                  <a onClick={label === 'home' ? () => {} : onClick}>{label}</a>
                 </Link>
               </li>
           ))}

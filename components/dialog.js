@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import ReactSVG from "react-svg";
 
-const Dialog = ({ showDialog }) => {
+const Dialog = ({ showDialog, onSubmit }) => {
   const [error, setError] = useState('');
+  const [password, setPassword] = useState('');
   const onClose = () => {
     const body = document.querySelector('body');
     const html = document.querySelector('html');
     body.style.overflow = "auto";
     html.style.overflow = "auto";
-    showDialog(false);
+    showDialog({ showDialog: false });
   };
 
   return (
@@ -26,12 +27,21 @@ const Dialog = ({ showDialog }) => {
             />
             <p>Please enter the password to proceed.</p>
             <div className='content'>
-              <input className='input' type='password' placeholder='password' />
+              <input className='input' type='password' placeholder='password' value={password} onChange={(e) => {
+                setPassword(e.target.value);
+              }}/>
               <input className='input input-button' type='submit' value='Enter' onClick={() => {
-                setError('Sorry, the password you entered is incorrect.  Please try again.');
-                setTimeout(() => {
-                  setError('');
-                }, 2000)
+                const { hasError, successCallback } = onSubmit(password);
+                console.log(hasError);
+                if (hasError) {
+                  setError('Sorry, the password you entered is incorrect.  Please try again.');
+                  setTimeout(() => {
+                    setError('');
+                  }, 2000)
+                } else {
+                  onClose();
+                  successCallback();
+                }
               }}/>
             </div>
           </div>
