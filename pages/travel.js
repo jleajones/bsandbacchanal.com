@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PhotoBlock from '../components/photoBlock';
-import ComingSoon from '../components/comingSoon';
+import TravelContent from '../components/travelContent';
 import ProtectedPage from '../components/protectedPage';
 
 const Travel = ({ isLoggedIn }) => {
@@ -14,7 +14,7 @@ const Travel = ({ isLoggedIn }) => {
       >
         <h3>Travel</h3>
       </PhotoBlock>
-      <ComingSoon />
+      <TravelContent />
       <style jsx>{`
         h3 {
           text-align: left;
@@ -24,7 +24,7 @@ const Travel = ({ isLoggedIn }) => {
           color #ffffff;
           font-size: 72px;
           line-height: 50px;
-          padding: 270px 0 0;
+          padding: 320px 0 0;
           text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
         }
       `}</style>

@@ -1,16 +1,24 @@
 import React from 'react';
 
-import language from '../constants/language';
+// import language from '../constants/language';
 
-const RegistryContent = () => (
+const AccommodationsContent = () => (
   <section>
     <div className="container">
       <div className="item">
-        <h2>{language.registryHeading()}</h2>
-        <p>{language.registryText()}</p>
+        <h2>Where to stay...</h2>
+        <p>
+          We hope that you’ll join us for more than just the wedding day itself
+          and have the opportunity to experience the unique beauty that Tobago
+          has to offer. Accordingly, we’ve pre-selected a few housing options
+          based on amenities and convenience. If you have questions or are
+          interested in alternative accommodations, please reach out to our
+          wedding coordinator Tricia at <a href="">eventsbytricia@hotmail.com</a> or us
+          directly at <a href="">britniandsamuel@gmail.com</a>.
+        </p>
       </div>
     </div>
-      <style jsx>{`
+    <style jsx>{`
       section {
         padding: 120px 0 60px;
         display: flex;
@@ -38,7 +46,7 @@ const RegistryContent = () => (
       }
 
       p a {
-        color: #cccccc;
+        color: #e3c5c3;
       }
 
       p a:hover {
@@ -72,4 +80,4 @@ const RegistryContent = () => (
   </section>
 );
 
-export default RegistryContent;
+export default AccommodationsContent;

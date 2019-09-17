@@ -7,7 +7,7 @@ import LocationCallout from '../components/locationCallout';
 import PhotoBlock from '../components/photoBlock';
 import Welcome from '../components/welcome';
 
-const components = [<LocationCallout />, <DateCallout />];
+const components = [<LocationCallout color='#fff'/>, <DateCallout color='#fff'/>];
 
 const Home = () => {
   return (

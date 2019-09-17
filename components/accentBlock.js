@@ -8,16 +8,11 @@ const AccentBlock = ({ backgroundColor, textColor, components }) => (
       {components.map((component, idx) => (
         <React.Fragment key={idx}>
           <div className="item">{component}</div>
-          {idx < components.length - 1 && <Divider />}
+          {idx < components.length - 1 && <Divider color="#fff" />}
         </React.Fragment>
       ))}
     </div>
     <style jsx>{`
-      :global(hr) {
-        border-left: 1px solid #fff;
-        border-right: none;
-      }
-
       section {
         background-color: ${backgroundColor};
         color: ${textColor};

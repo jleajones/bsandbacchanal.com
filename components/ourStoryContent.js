@@ -1,16 +1,22 @@
 import React from 'react';
 
-import language from '../constants/language';
+// import language from '../constants/language';
 
-const RegistryContent = () => (
+const OurStoryContent = () => (
   <section>
     <div className="container">
       <div className="item">
-        <h2>{language.registryHeading()}</h2>
-        <p>{language.registryText()}</p>
+        <h2>How it all began</h2>
+        <p>
+          Our story began at Dartmouth College in 2005 when Britni was a
+          Freshman and Samuel was a Senior. Over the course of that year our
+          friendship grew from one that started with impassioned debates over
+          meaningful and meaningless topics, sustained by a shared love for
+          fried dumplings and dark liquor into one where...
+        </p>
       </div>
     </div>
-      <style jsx>{`
+    <style jsx>{`
       section {
         padding: 120px 0 60px;
         display: flex;
@@ -72,4 +78,4 @@ const RegistryContent = () => (
   </section>
 );
 
-export default RegistryContent;
+export default OurStoryContent;

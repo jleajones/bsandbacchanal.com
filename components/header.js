@@ -61,6 +61,7 @@ const Header = ({ onMenuClick, showDialog, isLoggedIn }) => {
           color: #666666;
           font-size: 12px;
           line-height: 12px;
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35);
         }
 
         .accentBar a {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import PhotoBlock from '../components/photoBlock';
-import ComingSoon from '../components/comingSoon';
+import AccommodationsContent from '../components/accommodationsContent';
 import ProtectedPage from '../components/protectedPage';
 
 const Accommodations = ({ isLoggedIn }) => {
@@ -14,7 +14,7 @@ const Accommodations = ({ isLoggedIn }) => {
       >
         <h3>Accommodations</h3>
       </PhotoBlock>
-      <ComingSoon />
+      <AccommodationsContent />
       <style jsx>{`
         h3 {
           text-align: left;

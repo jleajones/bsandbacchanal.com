@@ -25,7 +25,7 @@ const Schedule = ({ isLoggedIn }) => {
           color #ffffff;
           font-size: 72px;
           line-height: 50px;
-          padding: 270px 0 0;
+          padding: 320px 0 0;
           text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
         }
       `}</style>
