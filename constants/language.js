@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default {
   authPrompt: () => 'Please enter the password to proceed.',
   authErrorMessage: () =>
@@ -14,7 +16,9 @@ export default {
   comingSoonDefaultText: () => `We are working to provide you with the best experience possible!  Please check back in the 
                           upcoming weeks for more details.`,
   comingSoonThingsToDo: () =>
-    `We're making a list of our favorite activities and sights in the area. Check back soon.`,
+      ( <p>For questions regarding travel, accommodations or any of the scheduled events please
+        contact us @ <a href='mailto:britniandsamuel@gmail.com' style={{color: '#e3c5c3'}}>britniandsamuel@gmail.com</a></p>
+      ),
   comingSoonSchedule: () =>
     `We're still planning the weekend's events and will update this page soon.`,
   registryHeading: () => `Your presence is a present`,

@@ -15,7 +15,7 @@ const Welcome = () => (
         </p>
         <p>
           Welcome to our wedding website, we can’t wait to celebrate our special
-          day with you
+          day with you.
         </p>
         <p>
           We recognize and appreciate that almost all of you will be taking time

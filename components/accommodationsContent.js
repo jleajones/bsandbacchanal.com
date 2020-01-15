@@ -7,15 +7,25 @@ const AccommodationsContent = () => (
     <div className="container">
       <div className="item">
         <h2>Where to stay...</h2>
-        <p>
-          We hope that you’ll join us for more than just the wedding day itself
-          and have the opportunity to experience the unique beauty that Tobago
-          has to offer. Accordingly, we’ve pre-selected a few housing options
-          based on amenities and convenience. If you have questions or are
-          interested in alternative accommodations, please reach out to our
-          wedding coordinator Tricia at <a href="">eventsbytricia@hotmail.com</a> or us
-          directly at <a href="">britniandsamuel@gmail.com</a>.
-        </p>
+
+        <div className="option">
+        <h5>The Villas at Stonehaven</h5>
+          <p>We have reserved 12 villas at The Villas at Stonehaven. If interested in staying in a villa please
+          reach out us at eventsbytricia@hotmail.com and we will provide additional information on availability and pricing.</p>
+        </div>
+
+        <div className="option">
+        <h5>Bacolet Beach Club</h5>
+          <p>We have reserved a block of rooms at the Bacolet Beach Club for guests of the wedding. See
+          below for rates assuming a 4-night stay from June 4 th – June 8 th , 2002. For more information or to
+            make a reservation please send an email to <a href="mailto:reservations@bacoletbeachclub.com">Renee at reservations@bacoletbeachclub.com</a> or a
+          WhatsApp message to +1 (868) 463 4604. In your email / message please reference the “Jackson
+            Wedding” and include the following details:</p>
+        <p><b>Number of guests</b><br />
+          <b>Dates of proposed stay</b><br />
+          <b>Contact details (telephone # / email)</b><br /></p>
+        <p><b>Total for 4-nights is $560 per couple / room inclusive of hotel tax</b></p>
+        </div>
       </div>
     </div>
     <style jsx>{`
@@ -63,6 +73,20 @@ const AccommodationsContent = () => (
         max-width: 660px;
         margin: 0 auto;
         text-align: center;
+      }
+      
+      .option {
+        margin: 80px 0 150px;
+      }
+      
+      .option h5 {
+          font-family: bodoni-urw, serif;
+          font-weight: 400;
+          font-style: normal;
+          font-size: 48px;
+          margin: 0;
+          color: #c6c6c6;
+          line-height: 5px;
       }
 
       @media (max-width: 768px) {

@@ -23,7 +23,7 @@ const Header = ({ onMenuClick, showDialog, isLoggedIn }) => {
       <div className="accentBar">
         <div className="container">
           <span>
-            {language.dateDate()}{' '}
+            {language.dateFullDate()}{' '}
             <strong>{language.destinationDetail()}</strong>,{' '}
             {language.destinationGeneral()}
           </span>

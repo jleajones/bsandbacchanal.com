@@ -25,7 +25,7 @@ class BsApp extends App {
     this.state = {
       showDialog: false,
       showDrawer: false,
-      isLoggedIn: false
+      isLoggedIn: true // TODO :set to false
     };
   }
 
