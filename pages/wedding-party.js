@@ -18,7 +18,7 @@ const WeddingParty = ({ isLoggedIn }) => {
           Jackson family did.</p>
     ),
     imageUrl: '',
-    flag: 'Matron of Honor'
+    flag: 'Maid of Honor'
   },{
     name: 'Dr. Cresandra Cummings',
     blurb: (

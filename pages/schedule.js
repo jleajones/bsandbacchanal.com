@@ -44,8 +44,8 @@ const Schedule = ({ isLoggedIn }) => {
         <h3>Schedule</h3>
       </PhotoBlock>
       {
-        events.map(event => (
-            <Event data={event} />
+        events.map((event, idx) => (
+            <Event data={event} eventId={idx} key={idx}/>
         ))
       }
 

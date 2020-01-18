@@ -11,15 +11,14 @@ const AccommodationsContent = () => (
         <div className="option">
         <h5>The Villas at Stonehaven</h5>
           <p>We have reserved 12 villas at The Villas at Stonehaven. If interested in staying in a villa please
-          reach out us at eventsbytricia@hotmail.com and we will provide additional information on availability and pricing.</p>
+          reach out us @ <a href='mailto:britniandsamuel@gmail.com' style={{color: '#e3c5c3'}}>britniandsamuel@gmail.com</a> and we will provide additional information on availability and pricing.</p>
         </div>
 
         <div className="option">
         <h5>Bacolet Beach Club</h5>
           <p>We have reserved a block of rooms at the Bacolet Beach Club for guests of the wedding. See
           below for rates assuming a 4-night stay from June 4 th – June 8 th , 2002. For more information or to
-            make a reservation please send an email to <a href="mailto:reservations@bacoletbeachclub.com">Renee at reservations@bacoletbeachclub.com</a> or a
-          WhatsApp message to +1 (868) 463 4604. In your email / message please reference the “Jackson
+            make a reservation please send an email to <a href="mailto:reservations@bacoletbeachclub.com">Renee at reservations@bacoletbeachclub.com</a> <em>OR</em>&nbsp;a&nbsp;<u>WhatsApp message to +1 (868) 463 4604</u>. In your email / message please reference the “Jackson
             Wedding” and include the following details:</p>
         <p><b>Number of guests</b><br />
           <b>Dates of proposed stay</b><br />
@@ -86,7 +85,7 @@ const AccommodationsContent = () => (
           font-size: 48px;
           margin: 0;
           color: #c6c6c6;
-          line-height: 5px;
+          line-height: 40px;
       }
 
       @media (max-width: 768px) {
