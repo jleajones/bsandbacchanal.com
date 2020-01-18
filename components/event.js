@@ -12,7 +12,8 @@ const Event = ({ data, eventId }) => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [eventIds, setEventIds] = useState([]);
   useEffect(() => {
-    const storedEventIds = getCookie('bs_events').split(',').map(Number);
+    const cookie = getCookie('bs_events');
+    const storedEventIds = cookie ? cookie.split(',').map(Number) : [];
     setEventIds([...storedEventIds, ...eventIds]);
   }, []);
 
