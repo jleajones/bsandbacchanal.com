@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+
 import EventForm from './eventForm';
 import EventFormSuccess from './eventFormSuccess';
 
@@ -21,7 +23,10 @@ const Event = ({ data, eventId }) => {
     // TODO: make request to send data
     const bsEvents = [...eventIds, eventId].join(',');
     document.cookie = `bs_events=${bsEvents}`;
-    console.log(formData);
+    axios.post('/api/send', {
+      ...formData,
+      event: data.display
+    });
     setIsSubmitted(true);
   };
 

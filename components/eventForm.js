@@ -1,25 +1,38 @@
 import React, { useState} from 'react';
 
 const EventForm = ({ onSubmit, eventId, details }) => {
-
+  // TODO: create form state `useReducer???`
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [count, setCount] = useState('');
+
   const [isDisabled, setIsDisabled] = useState(true);
 
+  // TODO: create single handler to update form state
   const handleSelectOnChange = (event) => {
     setCount(event.target.value);
 
-    if (event.target.value && name !== '') {
+    if (event.target.value && name !== '' && email !== '') {
       setIsDisabled(false);
     } else {
       setIsDisabled(true)
     }
   };
 
-  const handleInputOnChange = (event) => {
+  const handleNameInputOnChange = (event) => {
     setName(event.target.value);
 
-    if (event.target.value && count !== '') {
+    if (event.target.value && count !== '' && email !== '') {
+      setIsDisabled(false);
+    } else {
+      setIsDisabled(true)
+    }
+  };
+
+  const handleEmailInputOnChange = (event) => {
+    setEmail(event.target.value);
+
+    if (event.target.value && count !== '' && name !== '') {
       setIsDisabled(false);
     } else {
       setIsDisabled(true)
@@ -27,8 +40,9 @@ const EventForm = ({ onSubmit, eventId, details }) => {
   };
 
   const handleSubmit = () => {
-    onSubmit({name, count});
+    onSubmit({name, count, email});
   };
+
   return (
       <div className='form'>
         <div className='notes'>
@@ -36,12 +50,17 @@ const EventForm = ({ onSubmit, eventId, details }) => {
         </div>
         <div className='input'>
           <label htmlFor={`name-${eventId}`}>
-            Name: <input type='text' id={`name-${eventId}`} placeholder='Please enter your name' value={name} onChange={handleInputOnChange}/>
+            Name: <input type='text' name='name' id={`name-${eventId}`} placeholder='Please enter your name' value={name} onChange={handleNameInputOnChange}/>
+          </label>
+        </div>
+        <div className='input'>
+          <label htmlFor={`email-${eventId}`}>
+            Email: <input type='email' name='email' id={`name-${eventId}`} placeholder='Please enter your email address' value={email} onChange={handleEmailInputOnChange}/>
           </label>
         </div>
         <div className='input'>
           <label htmlFor={`count-${eventId}`}>
-            # of People: <select id={`count-${eventId}`} value={count} onChange={handleSelectOnChange}>
+            # of People: <select id={`count-${eventId}`} name='count' value={count} onChange={handleSelectOnChange}>
             <option value=''>Select number of people in your party</option>
             <option value='1'>1</option>
             <option value='2'>2</option>
@@ -78,6 +97,7 @@ const EventForm = ({ onSubmit, eventId, details }) => {
       }
       
       .input input[type='text'],
+      .input input[type='email'],
       .input select {
         padding: 8px;
         flex-grow: 1;
