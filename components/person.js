@@ -5,8 +5,8 @@ const Person = ({ data }) => (
       <div className="container">
         <div className="item">
           <h2>{data.flag && <span className={data.flag.replace(/\s/g, '-')}>{data.flag}:</span>}<br />{data.name}</h2>
-          <p>{data.blurb}</p>
           <img src={data.imageUrl} />
+          <p>{data.blurb}</p>
         </div>
       </div>
       <style jsx>{`
