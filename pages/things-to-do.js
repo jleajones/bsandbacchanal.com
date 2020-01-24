@@ -14,7 +14,7 @@ const ThingToDo = ({ isLoggedIn }) => {
         textColor="#000000"
       >
         <h3>
-          Thing
+          Things
           <br />
           To Do
         </h3>

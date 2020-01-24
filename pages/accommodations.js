@@ -8,7 +8,7 @@ const Accommodations = ({ isLoggedIn }) => {
   return (
     <ProtectedPage isLoggedIn={isLoggedIn}>
       <PhotoBlock
-        backgroundImage="/static/bs_hero2.png"
+        backgroundImage="/static/versace_bg.png"
         height="500px"
         textColor="#000000"
       >

@@ -310,9 +310,14 @@ const WeddingParty = ({ isLoggedIn }) => {
   return (
     <ProtectedPage isLoggedIn={isLoggedIn}>
       <PhotoBlock
-        backgroundImage="/static/bs_hero2.png"
+        backgroundImage="/static/ring_finger_bg.png"
         height="500px"
         textColor="#000000"
+        backgroundPosition={{
+          desktop: '',
+          tablet: '',
+          mobile: ''
+        }}
       >
         <h3>
           Wedding

@@ -18,7 +18,7 @@ const Schedule = ({ isLoggedIn }) => {
       location: 'Pigeon Point Beach',
       details: (
           <div>
-            <p style={{color: '#c6c6c6', margin: 0}}><b>Must RSVP @ <a href='mailto:britniandsamuel@gmail.com' style={{color: '#e3c5c3'}}>britniandsamuel@gmail.com</a></b></p>
+            <p style={{color: '#c6c6c6', margin: 0, textAlign: 'center'}}><b>RSVP Required</b></p>
           </div>
       )
     },
@@ -37,7 +37,7 @@ const Schedule = ({ isLoggedIn }) => {
   return (
     <ProtectedPage isLoggedIn={isLoggedIn}>
       <PhotoBlock
-        backgroundImage="/static/bs_hero2.png"
+        backgroundImage="/static/gotYourBack_bg.png"
         height="500px"
         textColor="#000000"
       >
