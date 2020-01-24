@@ -8,9 +8,10 @@ const Registry = ({ isLoggedIn }) => {
   return (
       <ProtectedPage isLoggedIn={isLoggedIn}>
         <PhotoBlock
-            backgroundImage="/static/hands_bg.png"
+            backgroundImage="/static/ring_finger_bg.png"
             height="500px"
             textColor="#000000"
+            mobilePosition="30% 0"
         >
           <h3>
             Our

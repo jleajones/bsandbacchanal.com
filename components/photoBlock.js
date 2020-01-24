@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PhotoBlock = ({ backgroundImage, height, children, backgroundPosition }) => (
+const PhotoBlock = ({ backgroundImage, height, children, mobilePosition }) => (
   <section>
     <div className="container">{children}</div>
     <style jsx>{`
@@ -24,6 +24,7 @@ const PhotoBlock = ({ backgroundImage, height, children, backgroundPosition }) =
       @media (max-width: 1024px) {
         section {
           background-repeat: no-repeat;
+          background-position: ${mobilePosition}
         }
 
         .container {
@@ -34,6 +35,7 @@ const PhotoBlock = ({ backgroundImage, height, children, backgroundPosition }) =
       @media (max-width: 768px) {
         section {
           background-repeat: no-repeat;
+          background-position: ${mobilePosition}
         }
 
         .container {
@@ -44,6 +46,7 @@ const PhotoBlock = ({ backgroundImage, height, children, backgroundPosition }) =
       @media (max-width: 320px) {
         section {
           background-repeat: no-repeat;
+          background-position: ${mobilePosition}
         }
       }
     `}</style>

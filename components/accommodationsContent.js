@@ -6,7 +6,7 @@ const AccommodationsContent = () => (
   <section>
     <div className="container">
       <div className="item">
-        <h2>Where to stay...</h2>
+        <h2>Accommodations</h2>
 
         <div className="option">
         <h5>The Villas at Stonehaven</h5>

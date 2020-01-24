@@ -24,13 +24,13 @@ const Schedule = ({ isLoggedIn }) => {
     },
     {
       display: 'Wedding Ceremony & Reception',
-      date: 'Saturday, June 6 th 5:15pm ET',
+      date: 'Saturday, June 6th 5:15pm ET',
       location: 'Ohana Villa Scarborough, Tobago',
       details: ''
     },
     {
       display: 'Farewell Brunch',
-      date: 'Sunday, June 7 th 1:00pm ET',
+      date: 'Sunday, June 7th 1:00pm ET',
       location: 'Ohana Villa Scarborough, Tobago',
       details: ''
     }];

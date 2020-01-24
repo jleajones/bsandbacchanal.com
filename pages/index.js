@@ -22,6 +22,7 @@ const Home = () => {
         backgroundImage="/static/bs_hero2.png"
         height="649px"
         textColor="#000000"
+        mobilePosition="10% 0"
       >
         <h3>
           You

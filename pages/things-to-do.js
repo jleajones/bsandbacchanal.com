@@ -12,6 +12,7 @@ const ThingToDo = ({ isLoggedIn }) => {
         backgroundImage="/static/bs_hero2.png"
         height="500px"
         textColor="#000000"
+        mobilePosition="10% 0"
       >
         <h3>
           Things

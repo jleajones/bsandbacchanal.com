@@ -8,11 +8,12 @@ const Accommodations = ({ isLoggedIn }) => {
   return (
     <ProtectedPage isLoggedIn={isLoggedIn}>
       <PhotoBlock
-        backgroundImage="/static/versace_bg.png"
+        backgroundImage=""
         height="500px"
         textColor="#000000"
       >
-        <h3>Accommodations</h3>
+        <h3>Where
+          <br />to stay?</h3>
       </PhotoBlock>
       <AccommodationsContent />
       <style jsx>{`
@@ -24,7 +25,7 @@ const Accommodations = ({ isLoggedIn }) => {
           color #ffffff;
           font-size: 72px;
           line-height: 50px;
-          padding: 320px 0 0;
+          padding: 270px 0 0;
           text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.8);
         }
       `}</style>
