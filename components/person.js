@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Person = ({ data }) => (
-    <section className="event">
+    <section className="person">
       <div className="container">
         <div className="item">
           <h2>{data.flag && <span className={data.flag.replace(/\s/g, '-')}>{data.flag}:</span>}<br />{data.name}</h2>
@@ -11,7 +11,7 @@ const Person = ({ data }) => (
       </div>
       <style jsx>{`
       section {
-        padding: 120px 0 60px;
+        padding: 60px 0 0;
         display: flex;
         flex-direction: column;
       }
@@ -34,19 +34,9 @@ const Person = ({ data }) => (
       .subText {
         margin: 0 0 30px;
       }
-
-      p {
-        margin: 30px 0;
-        color: #c6c6c6;
-        line-height: 32px;
-      }
-
-      p a {
-        color: #cccccc;
-      }
-
-      p a:hover {
-        color: #000;
+      
+      img {
+        margin-top: 30px;
       }
 
       .container {
@@ -59,10 +49,6 @@ const Person = ({ data }) => (
         max-width: 720px;
         margin: 0 auto;
         text-align: center;
-      }
-
-      .container > .item p {
-        max-width: 660px;
       }
 
       @media (max-width: 768px) {

@@ -9,7 +9,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Ms. Briana Stinson',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           One of my favorite pictures is one where my sister is holding me hours
           after I was born for the first time. I’ve known her my entire life and
           to see her happy and flourishing is a breath of fresh air. Britni is
@@ -21,13 +21,13 @@ const WeddingParty = ({ isLoggedIn }) => {
           family did.
         </p>
       ),
-      imageUrl: '/static/briana_stinson.jpg',
+      imageUrl: '/static/briana_stinson.png',
       flag: 'Maid of Honor'
     },
     {
       name: 'Dr. Cresandra Cummings',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           Britni and I met in 2005, during her freshman year at Dartmouth. We
           instantly shared a connection that flourished through our pursuit of
           becoming sisters of Alpha Kappa Alpha Sorority, Inc. She’s my wild,
@@ -37,12 +37,12 @@ const WeddingParty = ({ isLoggedIn }) => {
           union!
         </p>
       ),
-      imageUrl: '/static/cresandra_cummings.jpg'
+      imageUrl: '/static/cresandra_cummings.png'
     },
     {
       name: 'Ms. Jasmine Francis',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           I met Britni during my first week at Dartmouth, and we bonded over our
           current dislike of college while at the Hood Museum. However, she
           ended up being one of the reasons why I loved my time there. She
@@ -54,12 +54,12 @@ const WeddingParty = ({ isLoggedIn }) => {
           dudes!
         </p>
       ),
-      imageUrl: '/static/jasmine_francis.jpg'
+      imageUrl: '/static/jasmine_francis.png'
     },
     {
       name: 'Mrs. Simone Gbadebo-Smith',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           Britni and I met at Ori’s birthday party and I liked her energy
           immediately. She felt happy and warm and smart, so though we didn’t
           get to chat much that evening I knew we’d become fast friends, and we
@@ -69,12 +69,12 @@ const WeddingParty = ({ isLoggedIn }) => {
           intimate part of it.
         </p>
       ),
-      imageUrl: '/static/simone_gbadebo-smith.jpg'
+      imageUrl: '/static/simone_gbadebo-smith.png'
     },
     {
       name: 'Mrs. Nicole James',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           I met Britni while she was deeply supporting and investing in the work
           of entrepreneurs of color. Both of our personalities are extremely
           goal oriented AND, at times, ridiculously over top. We knew we’d be
@@ -86,12 +86,12 @@ const WeddingParty = ({ isLoggedIn }) => {
           excited to be on 11 (not 10) at the celebration of this union!
         </p>
       ),
-      imageUrl: '/static/nicole_james.jpg'
+      imageUrl: '/static/nicole_james.png'
     },
     {
       name: 'Mrs. Amy Lattimore',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           Business brought Britni and I together. So if you know Britni, you
           know that meeting her in a business setting is like meeting Oprah—
           she’s super sharp and on her p’s and q’s; admirable but also slightly
@@ -106,12 +106,12 @@ const WeddingParty = ({ isLoggedIn }) => {
           of life! I’ve got so much love for Britni and Sam. #BSandBacchanal
         </p>
       ),
-      imageUrl: '/static/amy_lattimore.jpg'
+      imageUrl: '/static/amy_lattimore.png'
     },
     {
       name: 'Mrs. Haley Rosowsky',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           Britni and I met in college at one of my first college parties in the
           Alpha apartment. Needless to say, we were maybe not the best versions
           of ourselves that night, but we somehow became friends and never
@@ -126,12 +126,12 @@ const WeddingParty = ({ isLoggedIn }) => {
           the QUEEN that she is.
         </p>
       ),
-      imageUrl: '/static/haley_rosowsky.jpg'
+      imageUrl: '/static/haley_rosowsky.png'
     },
     {
       name: 'Ms. Ramone Williams',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           I met Britni in Boston in 2011 when we were introduced by a mutual
           friend at Harvard Medical School. Our first hang out was at an after
           work mixer where Britni told me ALL about Sam! We’ve been friends ever
@@ -141,7 +141,7 @@ const WeddingParty = ({ isLoggedIn }) => {
           ever. Looking forward to witnessing this power couple tie the knot.
         </p>
       ),
-      imageUrl: '/static/ramone_williams.jpg'
+      imageUrl: '/static/ramone_williams.png'
     }
   ];
 
@@ -149,7 +149,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Mr. Jonathan Jackson',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           I met Sam when my parents decided that he should no longer be an only
           child. We’re 30 years into this and it’s been a great time. I met
           Britni the same year I met Green Key Weekend at Dartmouth College. All
@@ -161,18 +161,18 @@ const WeddingParty = ({ isLoggedIn }) => {
           anyone who wasn’t with us.
         </p>
       ),
-      imageUrl: '/static/jonathan_jackson.jpg',
+      imageUrl: '/static/jonathan_jackson.png',
       flag: 'Best Man'
     },
     {
       name: 'Mr. Brenden Stinson',
       blurb: '',
-      imageUrl: '/static/brenden_stinson.jpg'
+      imageUrl: '/static/brenden_stinson.png'
     },
     {
       name: 'Mr. Kevin Boakye',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           I met Samuel Jackson in the Spring of 2002 in Hanover, NH. We
           affectionately referred to him back then as “Khakis” due to the
           crisply pressed, crotch restricting Banana Republic khaki trousers Sam
@@ -196,12 +196,12 @@ const WeddingParty = ({ isLoggedIn }) => {
           looking forward to tearing up T&amp;T with you and your loved ones!
         </p>
       ),
-      imageUrl: '/static/kevin_boakye.jpg'
+      imageUrl: '/static/kevin_boakye.png'
     },
     {
       name: 'Mr. Orinola Gbadebo-Smith',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           Sam has been one of my best friends since our first day at Dartmouth.
           Our hobbies were keeping our hairlines as tight as possible, passively
           insulting one another and getting fired from a range of campus jobs.
@@ -225,12 +225,12 @@ const WeddingParty = ({ isLoggedIn }) => {
           future together!
         </p>
       ),
-      imageUrl: '/static/orinola_gbadebo-smith.jpg'
+      imageUrl: '/static/orinola_gbadebo-smith.png'
     },
     {
       name: 'Mr. Russell Gordon',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           On the surface, attributes like a shared West Indian heritage, being
           born a day apart and a similar taste in music would drive me and Sam
           to be friends. However, born in rival cities, the Yankees – Red Sox
@@ -246,17 +246,17 @@ const WeddingParty = ({ isLoggedIn }) => {
           social collective eager to celebrate the union of Britni and Sam.
         </p>
       ),
-      imageUrl: '/static/russell_gordon.jpg'
+      imageUrl: '/static/russell_gordon.png'
     },
     {
       name: 'Mr. Jason Lea-Jones',
-      blurb: '',
-      imageUrl: '/static/jason_lea-jones.jpg'
+      blurb: (<p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}></p>),
+      imageUrl: '/static/jason_lea-jones.png'
     },
     {
       name: 'Mr. Aaron Seabron',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           I met Sam in late fall 2005 when we were both final round interview
           candidates for a role at BlackRock in New York City. In the waiting
           room and during lunch we exchanged jokes with the other finalists and
@@ -281,12 +281,12 @@ const WeddingParty = ({ isLoggedIn }) => {
           the completion of this love story in Trinidad!
         </p>
       ),
-      imageUrl: '/static/aaron_seabron.jpg'
+      imageUrl: '/static/aaron_seabron.png'
     },
     {
       name: 'Mr. Njuguna “Una” Thiongo',
       blurb: (
-        <p>
+          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
           I met Sam during our freshman year at Dartmouth and quickly realized
           our parents lived 15 minutes away from each other which led to us
           spending significant time together during breaks as well. I was
@@ -304,16 +304,15 @@ const WeddingParty = ({ isLoggedIn }) => {
           and Sam finally make their union official!
         </p>
       ),
-      imageUrl: '/static/njuguna_una_thiongo.jpg'
+      imageUrl: '/static/njuguna_una_thiongo.png'
     }
   ];
   return (
     <ProtectedPage isLoggedIn={isLoggedIn}>
       <PhotoBlock
-        backgroundImage=""
+        backgroundImage="/static/hug_bg.png"
         height="500px"
         textColor="#000000"
-        mobilePosition="30% 0"
       >
         <h3>
           Wedding
@@ -327,15 +326,16 @@ const WeddingParty = ({ isLoggedIn }) => {
           <div className="item">
             <h2>Bridesmaids</h2>
           </div>
-        </div>
-      </section>
       {bridesmaids.map(person => (
         <Person data={person} key={person.name}/>
       ))}
-      <h2>Groomsmen</h2>
+      <h2 style={{ marginTop: '60px'}}>Groomsmen</h2>
       {groomsmen.map(person => (
         <Person data={person} key={person.name}/>
       ))}
+
+        </div>
+      </section>
       <style jsx>{`
       
       section {

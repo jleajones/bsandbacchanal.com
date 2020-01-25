@@ -17,7 +17,7 @@ const Registry = ({ isLoggedIn }) => {
   return (
     <ProtectedPage isLoggedIn={isLoggedIn}>
       <PhotoBlock
-        backgroundImage=""
+        backgroundImage="/static/smile_bg.png"
         height="500px"
         textColor="#000000"
       >
