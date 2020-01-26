@@ -37,10 +37,12 @@ const Person = ({ data }) => (
       
       img {
         margin-top: 30px;
+        width: 100%;
+        height: auto;
       }
 
       .container {
-        max-width: 1280;
+        max-width: 1280px;
         display: flex;
         justify-content: center;
       }
@@ -54,6 +56,13 @@ const Person = ({ data }) => (
       @media (max-width: 768px) {
         .container {
           padding: 0 20px;
+        }
+
+        .container > .item {
+          max-width: 720px;
+          width: 95%;
+          margin: 0 auto;
+          text-align: center;
         }
       }
 

@@ -9,7 +9,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Ms. Briana Stinson',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           One of my favorite pictures is one where my sister is holding me hours
           after I was born for the first time. I’ve known her my entire life and
           to see her happy and flourishing is a breath of fresh air. Britni is
@@ -27,7 +27,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Dr. Cresandra Cummings',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           Britni and I met in 2005, during her freshman year at Dartmouth. We
           instantly shared a connection that flourished through our pursuit of
           becoming sisters of Alpha Kappa Alpha Sorority, Inc. She’s my wild,
@@ -42,7 +42,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Ms. Jasmine Francis',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           I met Britni during my first week at Dartmouth, and we bonded over our
           current dislike of college while at the Hood Museum. However, she
           ended up being one of the reasons why I loved my time there. She
@@ -59,7 +59,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Mrs. Simone Gbadebo-Smith',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           Britni and I met at Ori’s birthday party and I liked her energy
           immediately. She felt happy and warm and smart, so though we didn’t
           get to chat much that evening I knew we’d become fast friends, and we
@@ -74,7 +74,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Mrs. Nicole James',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           I met Britni while she was deeply supporting and investing in the work
           of entrepreneurs of color. Both of our personalities are extremely
           goal oriented AND, at times, ridiculously over top. We knew we’d be
@@ -91,7 +91,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Mrs. Amy Lattimore',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           Business brought Britni and I together. So if you know Britni, you
           know that meeting her in a business setting is like meeting Oprah—
           she’s super sharp and on her p’s and q’s; admirable but also slightly
@@ -111,7 +111,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Mrs. Haley Rosowsky',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           Britni and I met in college at one of my first college parties in the
           Alpha apartment. Needless to say, we were maybe not the best versions
           of ourselves that night, but we somehow became friends and never
@@ -131,7 +131,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Ms. Ramone Williams',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           I met Britni in Boston in 2011 when we were introduced by a mutual
           friend at Harvard Medical School. Our first hang out was at an after
           work mixer where Britni told me ALL about Sam! We’ve been friends ever
@@ -149,7 +149,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Mr. Jonathan Jackson',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           I met Sam when my parents decided that he should no longer be an only
           child. We’re 30 years into this and it’s been a great time. I met
           Britni the same year I met Green Key Weekend at Dartmouth College. All
@@ -166,13 +166,22 @@ const WeddingParty = ({ isLoggedIn }) => {
     },
     {
       name: 'Mr. Brenden Stinson',
-      blurb: '',
+      blurb: (
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
+          My sister Brit is an awesome role model helping me make the right
+          decisions all through my life. The eldest sister of the Wild
+          Stinsonberries, she paved the right path for her siblings. I'm
+          grateful I've had someone like her in my life that I could talk to
+          about anything. I know she's going to find so much happiness with Sam
+          and I'm glad he's become part of the family.
+        </p>
+      ),
       imageUrl: '/static/brenden_stinson.png'
     },
     {
       name: 'Mr. Kevin Boakye',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           I met Samuel Jackson in the Spring of 2002 in Hanover, NH. We
           affectionately referred to him back then as “Khakis” due to the
           crisply pressed, crotch restricting Banana Republic khaki trousers Sam
@@ -201,7 +210,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Mr. Orinola Gbadebo-Smith',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           Sam has been one of my best friends since our first day at Dartmouth.
           Our hobbies were keeping our hairlines as tight as possible, passively
           insulting one another and getting fired from a range of campus jobs.
@@ -230,7 +239,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Mr. Russell Gordon',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           On the surface, attributes like a shared West Indian heritage, being
           born a day apart and a similar taste in music would drive me and Sam
           to be friends. However, born in rival cities, the Yankees – Red Sox
@@ -250,13 +259,23 @@ const WeddingParty = ({ isLoggedIn }) => {
     },
     {
       name: 'Mr. Jason Lea-Jones',
-      blurb: (<p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}></p>),
+      blurb: (
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
+          Sam and I met in 2009 at Dartmouth, in passing. It wasn't until 2015
+          when I got engaged and ended up at Starlets that I got his attention.
+          Since then our bond has grown and Sam is one of the most dependable
+          people I know. I'm excited for Sam and Britni and honored to take part
+          in their union. I wish them tons of love and happiness. Looking
+          forward to celebrating with everyone and making memories we won't
+          forget!
+        </p>
+      ),
       imageUrl: '/static/jason_lea-jones.png'
     },
     {
       name: 'Mr. Aaron Seabron',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           I met Sam in late fall 2005 when we were both final round interview
           candidates for a role at BlackRock in New York City. In the waiting
           room and during lunch we exchanged jokes with the other finalists and
@@ -286,7 +305,7 @@ const WeddingParty = ({ isLoggedIn }) => {
     {
       name: 'Mr. Njuguna “Una” Thiongo',
       blurb: (
-          <p style={{color: '#c6c6c6', margin: '20px 0', lineHeight: '32px'}}>
+        <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           I met Sam during our freshman year at Dartmouth and quickly realized
           our parents lived 15 minutes away from each other which led to us
           spending significant time together during breaks as well. I was
@@ -326,14 +345,13 @@ const WeddingParty = ({ isLoggedIn }) => {
           <div className="item">
             <h2>Bridesmaids</h2>
           </div>
-      {bridesmaids.map(person => (
-        <Person data={person} key={person.name}/>
-      ))}
-      <h2 style={{ marginTop: '60px'}}>Groomsmen</h2>
-      {groomsmen.map(person => (
-        <Person data={person} key={person.name}/>
-      ))}
-
+          {bridesmaids.map(person => (
+            <Person data={person} key={person.name} />
+          ))}
+          <h2 style={{ marginTop: '60px' }}>Groomsmen</h2>
+          {groomsmen.map(person => (
+            <Person data={person} key={person.name} />
+          ))}
         </div>
       </section>
       <style jsx>{`

@@ -25,7 +25,7 @@ class BsApp extends App {
     this.state = {
       showDialog: false,
       showDrawer: false,
-      isLoggedIn: true // TODO :set to false
+      isLoggedIn: false
     };
   }
 
@@ -99,6 +99,9 @@ class BsApp extends App {
         </main>
 
         <style jsx>{`
+          :global(*) {
+            box-sizing: border-box;
+          } 
           :global(body) {
             min-width: 320px;
           }

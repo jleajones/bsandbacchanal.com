@@ -72,7 +72,7 @@ const Welcome = () => (
       }
 
       .container {
-        max-width: 1280;
+        max-width: 1280px;
         display: flex;
         justify-content: center;
       }

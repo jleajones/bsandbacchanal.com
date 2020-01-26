@@ -17,7 +17,7 @@ const AccommodationsContent = () => (
         <div className="option">
         <h5>Bacolet Beach Club</h5>
           <p>We have reserved a block of rooms at the Bacolet Beach Club for guests of the wedding. See
-          below for rates assuming a 4-night stay from June 4 th – June 8 th , 2002. For more information or to
+          below for rates assuming a 4-night stay from June 4th – June 8th, 2020. For more information or to
             make a reservation please send an email to <a href="mailto:reservations@bacoletbeachclub.com">Renee at reservations@bacoletbeachclub.com</a> <em>OR</em>&nbsp;a&nbsp;<u>WhatsApp message to +1 (868) 463 4604</u>. In your email / message please reference the “Jackson
             Wedding” and include the following details:</p>
         <p><b>Number of guests</b><br />

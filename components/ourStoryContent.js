@@ -6,14 +6,7 @@ const OurStoryContent = () => (
   <section>
     <div className="container">
       <div className="item">
-        <h2>How it all began</h2>
-        <p>
-          Our story began at Dartmouth College in 2005 when Britni was a
-          Freshman and Samuel was a Senior. Over the course of that year our
-          friendship grew from one that started with impassioned debates over
-          meaningful and meaningless topics, sustained by a shared love for
-          fried dumplings and dark liquor into one where...
-        </p>
+        <h2>You know the vibes...</h2>
       </div>
     </div>
     <style jsx>{`
