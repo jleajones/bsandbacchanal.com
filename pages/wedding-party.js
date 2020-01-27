@@ -129,7 +129,7 @@ const WeddingParty = ({ isLoggedIn }) => {
       imageUrl: '/static/haley_rosowsky.png'
     },
     {
-      name: 'Ms. Ramone Williams',
+      name: 'Dr. Ramone Williams',
       blurb: (
         <p style={{ color: '#c6c6c6', margin: '20px 0', lineHeight: '32px' }}>
           I met Britni in Boston in 2011 when we were introduced by a mutual
