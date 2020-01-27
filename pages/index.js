@@ -6,14 +6,13 @@ import Hero from '../components/hero';
 import LocationCallout from '../components/locationCallout';
 import PhotoBlock from '../components/photoBlock';
 import Welcome from '../components/welcome';
-import CountDownWidget from "../components/countDown";
+// import CountDownWidget from "../components/countDown";
 
 const components = [<LocationCallout color='#fff'/>, <DateCallout color='#fff'/>];
 
 const Home = () => {
   return (
     <>
-      <CountDownWidget/>
       <Hero />
       <AccentBlock
         backgroundColor="#e3c5c3"
