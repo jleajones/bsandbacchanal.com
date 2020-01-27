@@ -1,1 +1,1 @@
-export default '!@#$%2020';
+export default '060620!';

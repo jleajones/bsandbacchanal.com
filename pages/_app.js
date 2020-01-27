@@ -99,6 +99,9 @@ class BsApp extends App {
         </main>
 
         <style jsx>{`
+          :global(*) {
+            box-sizing: border-box;
+          } 
           :global(body) {
             min-width: 320px;
           }

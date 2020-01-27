@@ -1,18 +1,17 @@
 import React from 'react';
 
-import language from '../constants/language';
-
-const RegistryContent = () => (
-  <section>
-    <div className="container">
-      <div className="item">
-        <h2>{language.registryHeading()}</h2>
-        <p>{language.registryText()}</p>
+const Person = ({ data }) => (
+    <section className="person">
+      <div className="container">
+        <div className="item">
+          <h2>{data.flag && <span className={data.flag.replace(/\s/g, '-')}>{data.flag}:</span>}<br />{data.name}</h2>
+          <img src={data.imageUrl} />
+          {data.blurb}
+        </div>
       </div>
-    </div>
       <style jsx>{`
       section {
-        padding: 120px 0 60px;
+        padding: 60px 0 0;
         display: flex;
         flex-direction: column;
       }
@@ -26,33 +25,30 @@ const RegistryContent = () => (
         margin: 0;
         color: #e3c5c3;
       }
+      
+      h2 span {
+        font-family: bodoni-urw, serif;
+        font-size: 24px;
+      }
 
       .subText {
         margin: 0 0 30px;
       }
-
-      p {
-        margin: 30px 0;
-        color: #c6c6c6;
-        line-height: 32px;
-      }
-
-      p a {
-        color: #cccccc;
-      }
-
-      p a:hover {
-        color: #000;
+      
+      img {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
       }
 
       .container {
-        max-width: 1280;
+        max-width: 1280px;
         display: flex;
         justify-content: center;
       }
 
       .container > .item {
-        max-width: 660px;
+        max-width: 720px;
         margin: 0 auto;
         text-align: center;
       }
@@ -60,6 +56,13 @@ const RegistryContent = () => (
       @media (max-width: 768px) {
         .container {
           padding: 0 20px;
+        }
+
+        .container > .item {
+          max-width: 720px;
+          width: 95%;
+          margin: 0 auto;
+          text-align: center;
         }
       }
 
@@ -69,7 +72,7 @@ const RegistryContent = () => (
         }
       }
     `}</style>
-  </section>
+    </section>
 );
 
-export default RegistryContent;
+export default Person;

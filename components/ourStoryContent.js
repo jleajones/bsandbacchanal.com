@@ -1,16 +1,15 @@
 import React from 'react';
 
-import language from '../constants/language';
+// import language from '../constants/language';
 
-const RegistryContent = () => (
+const OurStoryContent = () => (
   <section>
     <div className="container">
       <div className="item">
-        <h2>{language.registryHeading()}</h2>
-        <p>{language.registryText()}</p>
+        <h2>You know the vibes...</h2>
       </div>
     </div>
-      <style jsx>{`
+    <style jsx>{`
       section {
         padding: 120px 0 60px;
         display: flex;
@@ -72,4 +71,4 @@ const RegistryContent = () => (
   </section>
 );
 
-export default RegistryContent;
+export default OurStoryContent;

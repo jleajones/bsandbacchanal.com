@@ -6,8 +6,9 @@ import Hero from '../components/hero';
 import LocationCallout from '../components/locationCallout';
 import PhotoBlock from '../components/photoBlock';
 import Welcome from '../components/welcome';
+// import CountDownWidget from "../components/countDown";
 
-const components = [<LocationCallout />, <DateCallout />];
+const components = [<LocationCallout color='#fff'/>, <DateCallout color='#fff'/>];
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         backgroundImage="/static/bs_hero2.png"
         height="649px"
         textColor="#000000"
+        mobilePosition="10% 0"
       >
         <h3>
           You

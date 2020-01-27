@@ -3,12 +3,12 @@ import ReactSVG from 'react-svg';
 
 import language from '../constants/language';
 
-const LocationCallout = () => (
+const LocationCallout = ({ color }) => (
   <div>
     <ReactSVG
       src="/static/flight.svg"
       beforeInjection={svg => {
-        svg.setAttribute('style', 'width: 150px; height: auto; fill: #fff;');
+        svg.setAttribute('style', `width: 150px; height: auto; fill: ${color};`);
       }}
     />
     <h2>
@@ -28,7 +28,7 @@ const LocationCallout = () => (
         font-family: skolar-sans-latin, sans-serif;
         font-size: 32px;
         line-height: 32px;
-        color: #fff;
+        color: ${color};
       }
 
       h2 > span {

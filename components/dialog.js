@@ -26,7 +26,7 @@ const Dialog = ({ showDialog, onSubmit }) => {
   const onClose = () => {
     const body = document.querySelector('body');
     const html = document.querySelector('html');
-    body.style.overflow = 'auto';
+    body.style.overflow = 'none';
     html.style.overflow = 'auto';
     showDialog({ showDialog: false });
   };

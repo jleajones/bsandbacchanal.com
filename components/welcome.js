@@ -15,7 +15,7 @@ const Welcome = () => (
         </p>
         <p>
           Welcome to our wedding website, we can’t wait to celebrate our special
-          day with you
+          day with you.
         </p>
         <p>
           We recognize and appreciate that almost all of you will be taking time
@@ -72,7 +72,7 @@ const Welcome = () => (
       }
 
       .container {
-        max-width: 1280;
+        max-width: 1280px;
         display: flex;
         justify-content: center;
       }
