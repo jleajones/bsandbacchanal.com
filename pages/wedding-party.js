@@ -355,7 +355,7 @@ const WeddingParty = ({ isLoggedIn }) => {
         </div>
       </section>
       <style jsx>{`
-      
+
       section {
         padding: 120px 0 60px;
         display: flex;
@@ -371,7 +371,7 @@ const WeddingParty = ({ isLoggedIn }) => {
         margin: 0;
         color: #e3c5c3;
       }
-      
+
         h3 {
           text-align: left;
           font-family: bodoni-urw, serif;

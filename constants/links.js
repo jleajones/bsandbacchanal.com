@@ -5,6 +5,5 @@ export default [
   { href: '/travel', label: 'travel' },
   { href: '/accommodations', label: 'accommodations' },
   { href: '/registry', label: 'registry' },
-  { href: '/wedding-party', label: 'wedding party' },
-  { href: '/things-to-do', label: 'things to do' }
+  { href: '/wedding-party', label: 'wedding party' }
 ];

@@ -9,21 +9,48 @@ const AccommodationsContent = () => (
         <h2>Accommodations</h2>
 
         <div className="option">
-        <h5>The Villas at Stonehaven</h5>
-          <p>We have reserved 12 villas at The Villas at Stonehaven. If interested in staying in a villa please
-          reach out us @ <a href='mailto:britniandsamuel@gmail.com' style={{color: '#e3c5c3'}}>britniandsamuel@gmail.com</a> and we will provide additional information on availability and pricing.</p>
+          <h5>The Villas at Stonehaven</h5>
+          <p>
+            To reserve a villa at{' '}
+            <a href="" target="_blank" rel="noopener">
+              Stonehaven Villas please visit their website
+            </a>
+            .
+          </p>
+          <p className="alert-message">
+            If you need to change your previous reservation please reference The
+            Jackson wedding and share that this change is needed due to the
+            global COVID19 pandemic.
+          </p>
         </div>
 
         <div className="option">
-        <h5>Bacolet Beach Club</h5>
-          <p>We have reserved a block of rooms at the Bacolet Beach Club for guests of the wedding. See
-          below for rates assuming a 4-night stay from June 4th – June 8th, 2020. For more information or to
-            make a reservation please send an email to <a href="mailto:reservations@bacoletbeachclub.com">Renee at reservations@bacoletbeachclub.com</a> <em>OR</em>&nbsp;a&nbsp;<u>WhatsApp message to +1 (868) 463 4604</u>. In your email / message please reference the “Jackson
-            Wedding” and include the following details:</p>
-        <p><b>Number of guests</b><br />
-          <b>Dates of proposed stay</b><br />
-          <b>Contact details (telephone # / email)</b><br /></p>
-        <p><b>Total for 4-nights is $560 per couple / room inclusive of hotel tax</b></p>
+          <h5>Bacolet Beach Club</h5>
+          <p>
+            We have reserved a block of rooms at the Bacolet Beach Club for
+            guests of the wedding. For more information or to make a reservation
+            please send an email to{' '}
+            <a href="mailto:reservations@bacoletbeachclub.com">
+              Renee at reservations@bacoletbeachclub.com
+            </a>{' '}
+            <em>OR</em>&nbsp;a&nbsp;<u>WhatsApp message to +1 (868) 463 4604</u>
+            . In your email / message please reference the “Jackson Wedding” and
+            include the following details:
+          </p>
+          <p>
+            <b>Number of guests</b>
+            <br />
+            <b>Dates of proposed stay</b>
+            <br />
+            <b>Contact details (telephone # / email)</b>
+            <br />
+          </p>
+
+          <p className="alert-message">
+            If you need to change your previous reservation please reference The
+            Jackson wedding and share that this change is needed due to the
+            global COVID19 pandemic.
+          </p>
         </div>
       </div>
     </div>
@@ -32,6 +59,11 @@ const AccommodationsContent = () => (
         padding: 120px 0 60px;
         display: flex;
         flex-direction: column;
+      }
+
+      .alert-message {
+        color: red;
+        line-height: 18px;
       }
 
       h2 {
@@ -73,19 +105,19 @@ const AccommodationsContent = () => (
         margin: 0 auto;
         text-align: center;
       }
-      
+
       .option {
         margin: 80px 0 150px;
       }
-      
+
       .option h5 {
-          font-family: bodoni-urw, serif;
-          font-weight: 400;
-          font-style: normal;
-          font-size: 48px;
-          margin: 0;
-          color: #c6c6c6;
-          line-height: 40px;
+        font-family: bodoni-urw, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 48px;
+        margin: 0;
+        color: #c6c6c6;
+        line-height: 40px;
       }
 
       @media (max-width: 768px) {

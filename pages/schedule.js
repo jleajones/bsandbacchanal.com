@@ -8,13 +8,13 @@ const Schedule = ({ isLoggedIn }) => {
 
   const events = [{
     display: 'Welcome Reception',
-    date: 'Thursday, June 4th 6pm-10pm EST',
+    date: 'Thursday, September 3rd 6pm-10pm EST',
     location: 'RenMar\'s Restaurant & Bar at Pigeon Point Beach',
     details: ''
   },
     {
       display: 'Buccoo Reef & Nylon Pool Tour',
-      date: 'Friday, June 5th at 11am ET',
+      date: 'Friday, September 4th at 11am ET',
       location: 'Pigeon Point Beach',
       details: (
           <div>
@@ -24,13 +24,13 @@ const Schedule = ({ isLoggedIn }) => {
     },
     {
       display: 'Wedding Ceremony & Reception',
-      date: 'Saturday, June 6th 5:15pm ET',
+      date: 'Saturday, September 5th 5:15pm ET',
       location: 'Ohana Villa Scarborough, Tobago',
       details: ''
     },
     {
       display: 'Farewell Brunch',
-      date: 'Sunday, June 7th 1:00pm ET',
+      date: 'Sunday, September 6th 1:00pm ET',
       location: 'Ohana Villa Scarborough, Tobago',
       details: ''
     }];
@@ -74,14 +74,14 @@ const Schedule = ({ isLoggedIn }) => {
         color: #c6c6c6;
         line-height: 32px;
       }
-        
+
 
       section {
         padding: 120px 0 30px;
         display: flex;
         flex-direction: column;
       }
-      
+
       .container {
         max-width: 1280;
         display: flex;

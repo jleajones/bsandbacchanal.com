@@ -10,7 +10,7 @@ const Welcome = () => (
         <h2>Welcome</h2>
         <p className="subText">
           <Link href="#">
-            <a>{language.hashtag()}</a>
+            <a>{language.hashTag()}</a>
           </Link>
         </p>
         <p>
@@ -27,7 +27,8 @@ const Welcome = () => (
         <p>
           You can also read more about our love story, get to know our standout
           wedding party and check out our registry information. Read as much (or
-          as little) as you like and most importantly don’t forget to RSVP!
+          as little) as you like and most importantly <b>don’t forget to RSVP</b> via
+          the <b><em>Schedule</em></b> section!
         </p>
         <p>
           Finally, a sincere thank you to all of you for your ongoing love and

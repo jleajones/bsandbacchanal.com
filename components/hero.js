@@ -13,7 +13,6 @@ const Hero = () => (
         </div>
       </div>
     </div>
-
     <style jsx>{`
       section {
         height: 700px;
