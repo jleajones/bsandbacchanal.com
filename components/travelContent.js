@@ -4,42 +4,59 @@ import React from 'react';
 
 const OurStoryContent = () => (
   <section>
+    <div className="covid-message">
+      <p>The majority of airlines are open to rebooking travel at minimal to no
+      additional cost. Please share with your travel provider that this change
+        is needed due to the global COVID19 pandemic.</p>
+    </div>
     <div className="container">
       <div className="item">
         <h2>Trinidad & Tobago</h2>
         <div className="content">
-        <p>
-          A nation comprised of two islands ~50 miles away from each other by
-          air. Due to the size of the respective islands, international flights
-          only fly into Port of Spain, Trinidad so an additional short flight
-          will need to be taken from Port of Spain (POS) to Robinson
-          International Airport (TAB) in Tobago since the wedding, reception and
-          surrounding activities will take place in Tobago.
-        </p>
+          <p>
+            A nation comprised of two islands ~50 miles away from each other by
+            air. Due to the size of the respective islands, international
+            flights only fly into Port of Spain, Trinidad so an additional short
+            flight will need to be taken from Port of Spain (POS) to Robinson
+            International Airport (TAB) in Tobago since the wedding, reception
+            and surrounding activities will take place in Tobago.
+          </p>
         </div>
         <div className="content">
-        <p>The following airlines fly from the US to Piarco International Airport (POS). Port of Spain,
-          Trinidad &amp; Tobago.</p>
-        <ul>
-          <li>United Airlines</li>
-          <li>American Airlines</li>
-          <li>Caribbean Airlines</li>
-          <li>JetBlue</li>
-        </ul>
+          <p>
+            The following airlines fly from the US to Piarco International
+            Airport (POS). Port of Spain, Trinidad &amp; Tobago.
+          </p>
+          <ul>
+            <li>United Airlines</li>
+            <li>American Airlines</li>
+            <li>Caribbean Airlines</li>
+            <li>JetBlue</li>
+          </ul>
         </div>
         <div className="content">
-        <p><b><em>Please note that all wedding festivities will take place in Tobago which is a separate island
-          15min from Piarco Airport via plane. Flights leave approximately every hour.</em></b></p>
-        <p>Caribbean Airlines | Piarco International Airport (POS) &rarr; A.N.R Robinson International
-          Airport (TAB)</p>
+          <p>
+            <b>
+              <em>
+                Please note that all wedding festivities will take place in
+                Tobago which is a separate island 15min from Piarco Airport via
+                plane. Flights leave approximately every hour.
+              </em>
+            </b>
+          </p>
+          <p>
+            Caribbean Airlines | Piarco International Airport (POS) &rarr; A.N.R
+            Robinson International Airport (TAB)
+          </p>
         </div>
 
         <div className="content">
-          <p>*** Flights between POS and TAB sell out well in advance during the summer months given the
-            number of Trinidadians that travel daily to Tobago. <b>Please book this portion of your itinerary
-              ASAP but no later than the month of February to ensure no complications.</b>  Round trip is ~$75
-            USD and tickets can be modified up until the day of travel subject to availability for minimal
-            charge. ***</p>
+          <p>
+            *** Flights between POS and TAB sell out well in advance during the
+            summer months given the number of Trinidadians that travel daily to
+            Tobago. Round trip is ~$75 USD and tickets can be modified up until
+            the day of travel subject to availability for minimal charge. ***
+          </p>
         </div>
       </div>
     </div>
@@ -63,7 +80,7 @@ const OurStoryContent = () => (
       .subText {
         margin: 0 0 30px;
       }
-      
+
       .content {
         margin-bottom: 80px;
       }
@@ -80,6 +97,24 @@ const OurStoryContent = () => (
 
       p a:hover {
         color: #000;
+      }
+
+      .covid-message {
+        text-align: center;
+        background: red;
+        margin-bottom: 45px;
+        margin-top: -120px
+      }
+
+      .covid-message > p {
+      margin: 0 auto;
+      max-width: 95%;
+width: 700px;
+        color: pink;
+        padding: 10px 0;
+        font-weight: bold;
+        line-height: 22px;
+
       }
 
       .container {
@@ -110,7 +145,7 @@ const OurStoryContent = () => (
         display: flex;
         justify-content: center;
       }
-        
+
       ul {
         width: 75%;
         text-align: left;
@@ -128,7 +163,7 @@ const OurStoryContent = () => (
           width: 100%;
         }
       }
-      
+
       li {
         margin-bottom: 12px;
         color: #c6c6c6;

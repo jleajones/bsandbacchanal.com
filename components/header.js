@@ -29,7 +29,7 @@ const Header = ({ onMenuClick, showDialog, isLoggedIn }) => {
           </span>
           <span>
             <Link href="#">
-              <a>{language.hashtag()}</a>
+              <a>{language.hashTag()}</a>
             </Link>
           </span>
         </div>
