@@ -3,14 +3,14 @@ import sgMail from '@sendgrid/mail';
 export default async function(req, res) {
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-  const { email, event, name, count } = req.body;
+  const { email, event, name, count, attendance } = req.body;
 
   const content = {
     to: 'britniandsamuel@gmail.com',
     from: email,
     subject: `${event} RSVP - Website`,
     text: `${event} - ${name} (${count})`,
-    html: `<h5>${event}</h5><p>Name: ${name}</p><p>Email: ${email}</p><p>Count: ${count}</p>`
+    html: `<h5>${event}</h5><p>Name: ${name}</p><p>Email: ${email}</p><p>Attending: ${attendance}</p><p>Count: ${count}</p>`
   };
 
   try {
