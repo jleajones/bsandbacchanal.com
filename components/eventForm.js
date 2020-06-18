@@ -95,7 +95,7 @@ const EventForm = ({ onSubmit, eventId, details }) => {
             type="radio"
             name="attending"
             id={`not-attending-${eventId}`}
-            value="no"
+            value="yes"
             onChange={handleAttendanceOnChange}
           />
         </label>
