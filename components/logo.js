@@ -33,11 +33,11 @@ const Logo = ({ fixed, onMenuClick }) => {
         }
 
         .logo {
-          text-align: center;
+          color: #fff;
           font-family: bickham-script-pro-3, serif;
           font-weight: 100;
           font-style: normal;
-          font-size: ${fixed ? '70px' : '90px'};
+          font-size: 70px;
           line-height: ${fixed ? '40px' : '70px'};
           margin: ${fixed ? '20px 0 0' : '20px 0 0'};
           transition: all 0.5s ease;
