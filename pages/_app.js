@@ -93,11 +93,7 @@ class BsApp extends App {
             box-sizing: border-box;
           }
           :global(body) {
-            min-width: 320px;
-            background-image: url(/static/bs_hero.png);
-            background-attachment: fixed;
-            background-size: cover;
-            background-position: 30% 0;
+            background: #000;
           }
         `}</style>
       </>

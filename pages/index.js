@@ -26,7 +26,9 @@ const Home = () => {
         through the reopening from the COVID19 peak, but mostly enjoying this
         time together as a newly married couple! Yes, you read that right.
         <br />
+        <br />
         <img src={'/static/IMG_1842.jpg'}  width="100%"/>
+        <br />
         <br />
         Given the continued uncertainty around international travel between the
         US and Trinidad & Tobago in the coming months, and the possibility of
@@ -76,12 +78,13 @@ const Home = () => {
         div {
           background-color: rgba(0, 0, 0, 0.6);
           max-width: 600px;
-          width: 80%;
+          width: 96%;
           margin: 0 auto;
-          padding: 60px 24px;
+          padding: 60px 4px;
           margin-bottom: 48px;
-          margin-top: 300px;
+          box-shadow: 3px 2px 8px rgba(0,0,0,1);
         }
+
         h3 {
           text-align: left;
           font-family: bodoni-urw, serif;

@@ -32,7 +32,6 @@ const Header = ({ onMenuClick, showDialog, isLoggedIn }) => {
           width: 100%;
           top: 0;
           z-index: 99999;
-          padding: 20px 0;
         }
 
         .fixed {
