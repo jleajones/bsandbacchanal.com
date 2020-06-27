@@ -24,15 +24,6 @@ const Nav = ({ showDialog, isLoggedIn }) => {
 
   return (
     <nav>
-      <ul>
-        {links.map(({ key, href, label }) => (
-          <li key={key}>
-            <Link href={href}>
-              <a onClick={label === 'home' ? () => {} : onClick}>{label}</a>
-            </Link>
-          </li>
-        ))}
-      </ul>
 
       <style jsx>{`
         :global(body) {

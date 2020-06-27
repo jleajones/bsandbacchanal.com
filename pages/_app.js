@@ -71,7 +71,7 @@ class BsApp extends App {
 
   render() {
     const { Component, pageProps } = this.props;
-    const { showDialog, showDrawer, isLoggedIn } = this.state;
+    const { isLoggedIn } = this.state;
 
     return (
       <>
@@ -79,16 +79,6 @@ class BsApp extends App {
           <title key="title">Britni & Samuel | #bsandbacchanal</title>
           <link rel="stylesheet" href="https://use.typekit.net/tbt8qyu.css" />
         </Head>
-        {showDrawer && (
-          <Drawer
-            onMenuClick={this.setShowDrawer}
-            showDialog={this.setShowDialog}
-            isLoggedIn={isLoggedIn}
-          />
-        )}
-        {showDialog && (
-          <Dialog showDialog={this.setShowDialog} onSubmit={this.onSubmit} />
-        )}
         <Header
           onMenuClick={this.setShowDrawer}
           showDialog={this.setShowDialog}
@@ -101,19 +91,9 @@ class BsApp extends App {
         <style jsx>{`
           :global(*) {
             box-sizing: border-box;
-          } 
+          }
           :global(body) {
-            min-width: 320px;
-          }
-
-          main {
-            margin-top: 170px;
-          }
-
-          @media (max-width: 768px) {
-            main {
-              margin-top: 119px;
-            }
+            background: #000;
           }
         `}</style>
       </>

@@ -13,19 +13,10 @@ const Logo = ({ fixed, onMenuClick }) => {
   return (
     <div className="root">
       <h1 className="logo">Britni &amp; Samuel</h1>
-
-      <span className="menu-icon">
-        <ReactSVG
-          src={`/static/menu.svg`}
-          beforeInjection={svg => {
-            svg.setAttribute('style', 'width: 24px; height: auto;');
-          }}
-          onClick={onClick}
-        />
-      </span>
       <style jsx>{`
         .root {
           position: relative;
+          padding-bottom: 42px;
         }
 
         .menu-icon {
@@ -33,11 +24,11 @@ const Logo = ({ fixed, onMenuClick }) => {
         }
 
         .logo {
-          text-align: center;
+          color: #fff;
           font-family: bickham-script-pro-3, serif;
           font-weight: 100;
           font-style: normal;
-          font-size: ${fixed ? '70px' : '90px'};
+          font-size: 70px;
           line-height: ${fixed ? '40px' : '70px'};
           margin: ${fixed ? '20px 0 0' : '20px 0 0'};
           transition: all 0.5s ease;
